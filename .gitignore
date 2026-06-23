@@ -208,3 +208,19 @@ marimo/_lsp/
 __marimo__/
 .idea
 .claude
+
+# Wykluczenie środowiska wirtualnego venv
+*.py[cod]
+
+# Pliki Jupyter Notebook
+.ipynb_checkpoints/
+
+# Pliki systemowe i IDE
+.DS_Store
+.vscode/
+
+# Requirements.txt zostawiamy, aby inni mogli odtworzyć środowisko
+# requirements.txt
+
+# Duże zbiory danych
+otomoto_offers_eng_23-04-2023.csv

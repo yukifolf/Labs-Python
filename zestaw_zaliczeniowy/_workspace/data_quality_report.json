@@ -1,0 +1,43 @@
+{
+  "contract": "imdb-train-contract",
+  "timestamp": "2026-06-24T01:33:34.462868",
+  "dataset_size": 2000,
+  "overall_errors_passed": true,
+  "rules": {
+    "no_nulls": {
+      "passed": true,
+      "severity": "error",
+      "details": "nulle: {'text': np.int64(0), 'label': np.int64(0)}"
+    },
+    "labels_in_set": {
+      "passed": true,
+      "severity": "error",
+      "details": "nieznane etykiety: set()"
+    },
+    "min_word_count": {
+      "passed": true,
+      "severity": "error",
+      "details": "recenzji < 5 slow: 0"
+    },
+    "max_word_count": {
+      "passed": true,
+      "severity": "warning",
+      "details": "recenzji > 2000 slow: 0"
+    },
+    "no_duplicates": {
+      "passed": true,
+      "severity": "warning",
+      "details": "duplikatow tekstu: 0"
+    },
+    "class_balance": {
+      "passed": true,
+      "severity": "error",
+      "details": "stosunek min/max: 1.000"
+    },
+    "no_html_tags": {
+      "passed": false,
+      "severity": "warning",
+      "details": "rekordow z HTML: 1189"
+    }
+  }
+}
